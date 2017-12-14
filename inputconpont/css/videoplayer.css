@@ -1,0 +1,71 @@
+body,html{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.content{
+	max-width: 750px;
+	margin: 0 auto;
+}
+.videoplayer{
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	
+}
+.video{
+	width: 100%;
+	
+
+}
+.mesgitem{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	align-items: end;
+	padding: .2rem 0.5rem;
+}
+.mesg-cion{
+	width: 3rem;
+	height: 2rem;
+	padding-right: .1rem;
+}
+.mesg-cion img{
+	width: 100%;
+	height: 100%;
+}
+.videowrap.in{
+	animation: ac 0.5s;
+}
+.videowrap.out{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999;
+	animation: an .3s;
+	
+}
+@-webkit-keyframes an{
+	from{top: -30%;}
+	to{top: 0;}
+}
+@-webkit-keyframes ac{
+	from{right: 0;}
+	to{right: -50%;}
+}
+.videowrap{
+	position: relative;
+}
+.contorl{
+	position: absolute;
+	bottom: 3px;
+	right: 0;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	align-items: center;
+}
